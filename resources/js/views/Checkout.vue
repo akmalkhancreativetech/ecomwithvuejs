@@ -15,6 +15,11 @@
                 </div>
                 <br>
                 <div>
+                    <div v-if="!isLoggedIn">
+                        <h2>You need to login to continue</h2>
+                        <button class="col-md-4 btn btn-primary float-left" @click="login">Login</button>
+                        <button class="col-md-4 btn btn-danger float-right" @click="register">Create an account</button>
+                    </div>
                     <div v-if="isLoggedIn">
                         <div class="row">
                             <label for="address" class="col-md-3 col-form-label">Delivery Address</label>
