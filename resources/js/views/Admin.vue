@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container-fluid hero-section d-flex align-content-center justify-content-center flex-wrap ml-auto">
-            
+
         </div>
     </div>
 </template>
