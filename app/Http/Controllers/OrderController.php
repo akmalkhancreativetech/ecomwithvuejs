@@ -47,6 +47,7 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->input()); exit;
         $order = Order::create([
             'product_id' => $request->product_id,
             'user_id' => Auth::id(),
